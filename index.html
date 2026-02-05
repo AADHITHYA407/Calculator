@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/png" >
+    <link rel="stylesheet" href="style.css">
+     <style>
+
+       body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.hdwallpapers.in/download/ford_shelby_mustang_4k-HD.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.calculator {
+    background: #A6C5D7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.operator {
+    background: #ff9500;
+    color: white;
+}
+
+.number {
+    background: #3a3a3a;
+    color: white;
+}
+
+.equal {
+    background: #34c759;
+    color: white;
+    grid-column: span 2;
+}
+
+.clear {
+    background: #ff3b30;
+    color: white;
+    grid-column: span 2;
+}
+     </style>
+</head>
+
+<body>
+    <img src="" alt="">
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="appendValue('.')">.</button>
+            <button class="operator" onclick="appendValue('/')">÷</button>
+
+
+            <button class="number" onclick="appendValue('7')">7</button>
+            <button class="number" onclick="appendValue('8')">8</button>
+            <button class="number" onclick="appendValue('9')">9</button>
+            <button class="operator" onclick="appendValue('*')">×</button>
+
+
+            <button class="number" onclick="appendValue('4')">4</button>
+            <button class="number" onclick="appendValue('5')">5</button>
+
+            <button class="number" onclick="appendValue('6')">6</button>
+
+
+
+            <button class="operator" onclick="appendValue('-')">-</button>
+            <button class="number" onclick="appendValue('1')">1</button>
+            <button class="number" onclick="appendValue('2')">2</button>
+            <button class="number" onclick="appendValue('3')">3</button>
+
+
+            <button class="operator" onclick="appendValue('+')">+</button>
+            <button class="number" onclick="appendValue('0')">0</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    
+<script >
+  
+const display = document.getElementById("display");
+
+
+function appendValue(value) {
+    display.value += value;
+}
+
+function clearDisplay() {
+    display.value = "";
+}
+
+function calculate() {
+    try {
+        display.value = eval(display.value);
+    } catch {
+        display.value = "Error";
+    }
+}
+</script>
+</body>
+
+</html>
